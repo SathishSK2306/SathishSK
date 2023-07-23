@@ -1,0 +1,70 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5500/homepage.html
+Subject: Online Recruitment Solution
+Date: Tue, 18 Jul 2023 16:56:45 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--yMT1u11PozGehoq3D0xpxdH3dcQanm1zo98RRKCTwN----"
+
+
+------MultipartBoundary--yMT1u11PozGehoq3D0xpxdH3dcQanm1zo98RRKCTwN----
+Content-Type: text/html
+Content-ID: <frame-D769E29E8B9946A234F90F12B43C5FD8@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5500/homepage.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-b1e7fe81-60ee-4635-a391-bc8e05121e66@mhtml.blink" />
+ =20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <title>Online Recruitment Solution</title>
+ =20
+</head>
+
+<body>
+  <div class=3D"container">
+    <h1>Online Recruitment Solution</h1>
+    <p>An efficient solution for hiring managers and HR professionals</p>
+    <ul>
+      <li>Streamline your recruitment process</li>
+      <li>Automate job posting and candidate tracking</li>
+      <li>Efficiently manage candidate applications</li>
+      <li>Collaborate with team members</li>
+      <li>Advanced candidate search and filtering</li>
+      <li>Integrated communication tools</li>
+    </ul>
+    <a href=3D"http://127.0.0.1:5500/homepage.html#" class=3D"button">Get S=
+tarted</a>
+  </div>
+<!-- Code injected by live-server -->
+
+
+
+
+</body></html>
+------MultipartBoundary--yMT1u11PozGehoq3D0xpxdH3dcQanm1zo98RRKCTwN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-b1e7fe81-60ee-4635-a391-bc8e05121e66@mhtml.blink
+
+@charset "utf-8";
+
+body { background-color: rgb(87, 230, 92); font-family: Arial, sans-serif; =
+margin: 0px; padding: 0px; }
+
+.container { display: flex; justify-content: center; align-items: center; h=
+eight: 100vh; flex-direction: column; text-align: center; }
+
+h1 { font-size: 2.5rem; margin-bottom: 1.5rem; }
+
+p { font-size: 1.2rem; margin-bottom: 1.2rem; }
+
+.button { display: inline-block; padding: 1rem 2rem; font-size: 1.2rem; bac=
+kground-color: rgb(76, 175, 80); color: white; text-decoration: none; borde=
+r-radius: 4px; transition: background-color 0.3s ease 0s; }
+
+.button:hover { background-color: rgb(69, 160, 73); }
+------MultipartBoundary--yMT1u11PozGehoq3D0xpxdH3dcQanm1zo98RRKCTwN------

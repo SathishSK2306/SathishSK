@@ -1,0 +1,59 @@
+body{
+    /* background-color: rgb(213, 213, 63); */
+    background-image: url('/media/login.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#form{
+    width: 600px;
+    height: 200px;
+    margin: 20vh auto 0 auto;
+    text-align: center;
+    background-color: rgb(140, 163, 184);
+    border-radius: 10px;
+    padding-left: 10px;  
+}
+
+#name{
+    padding-top: 2em;
+    padding-right: 9vh;
+    padding-bottom: 6vh;
+    column-gap: 2em;
+   
+
+}
+h1{
+    color:rgb(112, 32, 186);
+    margin-top: 2em;
+    margin-left: 2em;  
+}
+#form button{
+    background-color: rgb(146, 212, 79);
+    color: rgb(11, 0, 0);
+    border: 1px solid rgb(6, 126, 16);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 0px;
+    text-align: center;
+    padding-left: .5em;
+    cursor: pointer;
+    font-size: 15px;
+    width: 30%;
+}
+.input-group{
+   margin-bottom: 1px;
+   
+
+}
+.input-group input{
+    border-radius: 5px;
+    width: 180px;
+    height: 15px;
+    margin-top: 2px;
+    padding: 1px;
+    border: 1px solid rgb(43, 43, 225);
+
+}

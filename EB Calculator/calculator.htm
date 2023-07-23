@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculator_files/style.css" type="text/css">
+    <link rel="intro" href="http://127.0.0.1:5500/intro/script.js" type="text">
+    <title>calculator</title>
+</head>
+<body>
+    <h1 id="Converter"></h1>
+    <div id="wrapper">
+        <h2>EB Bill calculator</h2>
+        <div class="inputdiv">
+            <input type="text" id="unitsInput" placeholder="enter a UNIT">
+        </div>
+        <div>
+            
+            <button type="submit" onclick="calculateElectricityBill(document.getElementById(&#39;unitsInput&#39;).value)">calculate </button>
+        </div>
+        <div id="result">
+           
+        </div> 
+    </div>
+    <!-- <div> -->
+         <!-- <script>
+            // console.log(document.getElementById("input").value)
+            function calculateElectricityBill(units){
+                // const celcius = Number(document.getElementById("input").value)
+                // const fahrenheit = (celcius*9/5)+32
+                // const result = document.getElementById("result")
+                // result.innerHTML = fahrenheit
+                // const unitsConsumed = parseInt(prompt("Enter the units consumed: "));
+                // const bill = calculateElectricityBill(unitsConsumed);
+                // console.log("Electricity bill: $", bill);
+                const billamount=Number(document.getElementById("input").value)
+                let rate=0
+                if (units<=50)
+                    billamount=units*3.5;
+                
+                else if(units<=150)
+                    billamount=50*3.5+(units-50)*4.5;
+                
+                else if(units<=250)
+                    billamount=50*3.5+100 * 4.5 + (units - 150) * 6;
+                 
+                else
+                    billamount= 50 * 3.5 + 100 * 4.5 + 100 * 6 + (units - 250) * 7.5;
+                    console.log(units)
+                let result=document.querySelector('#result')
+                result.innerHTML="this is your bill amount" + units 
+      
+            }
+               
+            
+        </script>   -->
+         <script>
+            function calculateElectricityBill(units) {
+              let resultElement = document.getElementById("result");
+        
+              if (resultElement) {
+                let billAmount = 0;
+        
+                if (units <= 50) {
+                  billAmount = units * 3.5;
+                } else if (units <= 150) {
+                  billAmount = 50 * 3.5 + (units - 50) * 4.5;
+                } else if (units <= 250) {
+                  billAmount = 50 * 3.5 + 100 * 4.5 + (units - 150) * 6;
+                } else {
+                  billAmount = 50 * 3.5 + 100 * 4.5 + 100 * 6 + (units - 250) * 7.5;
+                }
+        
+                resultElement.innerHTML = "Bill amount:" + billAmount;
+              }
+            }
+          
+          </script>  
+        
+    
+ 
+   
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>

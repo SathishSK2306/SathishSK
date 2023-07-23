@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet/style.css" type="text/css">
+    <link rel="intro" href="./intro/script.js" type="text">
+    <title>calculator</title>
+</head>
+<body>
+    <h1 id="Converter"></h1>
+    <div id="wrapper">
+        <h2>EB Bill calculator</h2>
+        <div class="inputdiv">
+            <input type="text" id="unitsInput" placeholder="enter a UNIT">
+        </div>
+        <div>
+            
+            <button type="submit" onclick="calculateElectricityBill(document.getElementById('unitsInput').value)">calculate </button>
+        </div>
+        <div id="result">
+           
+        </div> 
+    </div>
+    <!-- <div> -->
+         <!-- <script>
+            // console.log(document.getElementById("input").value)
+            function calculateElectricityBill(units){
+                // const celcius = Number(document.getElementById("input").value)
+                // const fahrenheit = (celcius*9/5)+32
+                // const result = document.getElementById("result")
+                // result.innerHTML = fahrenheit
+                // const unitsConsumed = parseInt(prompt("Enter the units consumed: "));
+                // const bill = calculateElectricityBill(unitsConsumed);
+                // console.log("Electricity bill: $", bill);
+                const billamount=Number(document.getElementById("input").value)
+                let rate=0
+                if (units<=50)
+                    billamount=units*3.5;
+                
+                else if(units<=150)
+                    billamount=50*3.5+(units-50)*4.5;
+                
+                else if(units<=250)
+                    billamount=50*3.5+100 * 4.5 + (units - 150) * 6;
+                 
+                else
+                    billamount= 50 * 3.5 + 100 * 4.5 + 100 * 6 + (units - 250) * 7.5;
+                    console.log(units)
+                let result=document.querySelector('#result')
+                result.innerHTML="this is your bill amount" + units 
+      
+            }
+               
+            
+        </script>   -->
+         <script>
+            function calculateElectricityBill(units) {
+              let resultElement = document.getElementById("result");
+        
+              if (resultElement) {
+                let billAmount = 0;
+        
+                if (units <= 50) {
+                  billAmount = units * 3.5;
+                } else if (units <= 150) {
+                  billAmount = 50 * 3.5 + (units - 50) * 4.5;
+                } else if (units <= 250) {
+                  billAmount = 50 * 3.5 + 100 * 4.5 + (units - 150) * 6;
+                } else {
+                  billAmount = 50 * 3.5 + 100 * 4.5 + 100 * 6 + (units - 250) * 7.5;
+                }
+        
+                resultElement.innerHTML = "Bill amount:" + billAmount;
+              }
+            }
+          
+          </script>  
+        
+    
+ 
+   
+</body>
+</html>
+<!-- <script>
+ let name="this is my web page"
+</script>
+<script>
+    let firstname="sathish"
+    let lastname="kumar"
+    let city="bangalore"
+    console.log(firstname+" "+lastname+" lives in "+city)
+      let msg1= `${firstname} ${lastname} lives in ${city}`
+      console.log(msg1)
+     let msg=`happy
+     birthday`
+     console.log(msg)
+     let msg2=`" you have 5 items in your cart.
+     your bill amount is $95"`
+    console.log(msg)
+    let cities=["chennai","madurai","bangalore"];
+    let marks=["24","23","89","78"];
+    console.log(cities)
+    console.log(cities.length)
+    console.log(marks.length)
+    console.log(cities[2])
+    let arr = [5,3,5,'sk',"abdd",]
+    console.log(arr)
+    let arry=['a','c','d','e','r']
+    console.log(arry)
+    console.log(arry.push('s'))
+    console.log(arry.pop('d'))
+    console.log(arry.shift())
+    console.log(arry)
+    let array=['5','8','10','7','9','11']
+    console.log(array)
+    console.log(array.splice(3,3,'17'))
+    console.log(array)
+    console.log(array.splice(4,4,'19'))
+    console.log(array)
+    console.log(array.splice(5,5,'111'))
+    console.log(array)
+    console.log(array.push(200))
+    console.log(array)
+    console.log(array.push(1000))
+    console.log(array)
+    console.log(array.unshift(100))
+    console.log(array)
+    console.log(array.length)
+</script>
+<script>
+    let psw_correct=false
+    if(psw_correct){
+        console.log("you are logged in")
+    }
+    else{
+        console.log("incorrect password")
+    }
+    console.log("bye")
+</script>
+<script> -->
+<!-- //     let a=53, b=12
+//     let max 
+//     if(a>b)
+//         max=a
+    
+//     else
+//         max=b
+//         max=a>b?a:b
+//     console.log(max)    
+// </script>
+<script>
+    // FD Rate Calculator
+
+</script> -->
